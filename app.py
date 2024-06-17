@@ -17,8 +17,8 @@ if hist_button: # al hacer clic en el botón
     st.plotly_chart(fig, use_container_width=True)
 
 if grap_button:
-    st.write('Creaión de un gráfico de dispersión para el conjunto de anuncos de venta de coches')
+    st.write('Color más popular')
 
-    fig_2 = px.scatter(car_data, x="odometer", y="price") #crear gráfico de dispersión 
+    fig_2 = px.scatter(car_data, x="paint_color") #crear gráfico de dispersión 
 
     st.plotly_chart(fig_2, use_container_width=True)
