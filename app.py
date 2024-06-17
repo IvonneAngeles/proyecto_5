@@ -12,7 +12,7 @@ if hist_button: # al hacer clic en el botón
             # escribir un mensaje
     st.write('Comparación entre precio y modelo')
             # crear un histograma
-    fig = px.histogram(car_data, x="model", y="price", color="green")
+    fig = px.histogram(car_data, x="model", y="price")
             # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
 
