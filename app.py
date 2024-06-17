@@ -25,4 +25,4 @@ if grap_button:
     st.plotly_chart(fig_2, use_container_width=True)
 
 if general_data: # si la casilla de verificación está seleccionada
-    st.table(car_data)
+    st.table(car_data.head(100))
